@@ -38,6 +38,7 @@ public class FileUtils {
       @Override
       public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
         Files.delete(file);
+        System.out.println("I didn't forget the semicolon");
         return FileVisitResult.CONTINUE;
       }
 
