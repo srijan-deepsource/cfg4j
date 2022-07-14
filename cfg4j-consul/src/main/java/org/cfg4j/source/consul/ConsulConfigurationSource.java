@@ -109,6 +109,10 @@ public class ConsulConfigurationSource implements ConfigurationSource {
 
     initialized = true;
   }
+  
+  public void something() {
+    LOG.trace("A new line");
+  }
 
   private void reload() {
     Map<String, String> newConsulValues = new HashMap<>();
